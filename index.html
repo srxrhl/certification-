@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -32,402 +31,402 @@
 html { scroll-behavior: smooth; }
 
 body {
-font-family: var(–sans);
-background: var(–bg);
-color: var(–text);
-min-height: 100vh;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
 }
 
 /* ── PROGRESS ── */
 .progress-wrap {
-position: sticky;
-top: 0;
-z-index: 100;
-background: var(–navy);
-padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--navy);
+  padding: 0;
 }
 .progress-bar-outer {
-height: 3px;
-background: var(–navy3);
+  height: 3px;
+  background: var(--navy3);
 }
 .progress-bar-inner {
-height: 100%;
-background: linear-gradient(90deg, var(–gold), var(–gold2));
-width: 0%;
-transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold2));
+  width: 0%;
+  transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
 }
 .progress-meta {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 11px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 32px;
 }
 .progress-name {
-font-size: 10px;
-font-weight: 600;
-letter-spacing: 0.14em;
-text-transform: uppercase;
-color: rgba(255,255,255,0.45);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
 }
 .progress-count {
-font-family: var(–serif);
-font-size: 14px;
-font-style: italic;
-color: var(–gold);
+  font-family: var(--serif);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--gold);
 }
 
 /* ── HERO ── */
 .hero {
-background: var(–navy);
-padding: 64px 32px 56px;
-text-align: center;
-position: relative;
-overflow: hidden;
+  background: var(--navy);
+  padding: 64px 32px 56px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 .hero::before {
-content: ‘’;
-position: absolute;
-top: -80px; left: 50%;
-transform: translateX(-50%);
-width: 500px; height: 500px;
-border-radius: 50%;
-background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
-pointer-events: none;
+  content: '';
+  position: absolute;
+  top: -80px; left: 50%;
+  transform: translateX(-50%);
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 .hero-badge {
-display: inline-block;
-font-size: 10px;
-font-weight: 600;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-color: var(–gold);
-border: 1px solid rgba(201,168,76,0.35);
-border-radius: 20px;
-padding: 5px 16px;
-margin-bottom: 24px;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,0.35);
+  border-radius: 20px;
+  padding: 5px 16px;
+  margin-bottom: 24px;
 }
 .hero h1 {
-font-family: var(–serif);
-font-size: clamp(34px, 5.5vw, 60px);
-font-weight: 700;
-color: var(–white);
-line-height: 1.08;
-margin-bottom: 6px;
+  font-family: var(--serif);
+  font-size: clamp(34px, 5.5vw, 60px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.08;
+  margin-bottom: 6px;
 }
 .hero h1 em {
-font-style: italic;
-color: var(–gold);
+  font-style: italic;
+  color: var(--gold);
 }
 .hero-sub {
-font-size: 13px;
-color: rgba(255,255,255,0.45);
-font-weight: 300;
-margin-top: 16px;
-letter-spacing: 0.04em;
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  font-weight: 300;
+  margin-top: 16px;
+  letter-spacing: 0.04em;
 }
 .hero-divider {
-display: flex;
-align-items: center;
-gap: 16px;
-margin: 28px auto 0;
-max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 28px auto 0;
+  max-width: 500px;
 }
 .hero-divider span { flex: 1; height: 1px; background: rgba(201,168,76,0.2); }
 .hero-divider small {
-font-size: 9px;
-font-weight: 600;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-color: rgba(255,255,255,0.3);
-white-space: nowrap;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  white-space: nowrap;
 }
 
 /* ── OBJECTIVE BOX ── */
 .objective {
-max-width: 600px;
-margin: 28px auto 0;
-background: rgba(255,255,255,0.05);
-border: 1px solid rgba(201,168,76,0.2);
-border-left: 3px solid var(–gold);
-padding: 20px 24px;
-text-align: left;
+  max-width: 600px;
+  margin: 28px auto 0;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-left: 3px solid var(--gold);
+  padding: 20px 24px;
+  text-align: left;
 }
 .objective p {
-font-size: 13px;
-color: rgba(255,255,255,0.6);
-line-height: 1.75;
-font-weight: 300;
-margin-bottom: 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 14px;
 }
 .objective ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .objective ul li {
-font-size: 12px;
-color: rgba(255,255,255,0.5);
-font-weight: 400;
-padding-left: 16px;
-position: relative;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  font-weight: 400;
+  padding-left: 16px;
+  position: relative;
 }
 .objective ul li::before {
-content: ‘—’;
-position: absolute;
-left: 0;
-color: var(–gold);
-font-weight: 700;
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
 }
 
 /* ── WRAPPER ── */
 .wrapper {
-max-width: 760px;
-margin: 0 auto;
-padding: 0 24px 80px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
 }
 
 /* ── SECTION ── */
 .section { margin-top: 52px; }
 
 .section-head {
-display: flex;
-align-items: center;
-gap: 0;
-margin-bottom: 24px;
-border-bottom: 1px solid var(–border);
-padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 14px;
 }
 .section-letter {
-font-family: var(–serif);
-font-size: 48px;
-font-weight: 700;
-font-style: italic;
-color: var(–gold);
-line-height: 1;
-margin-right: 16px;
-flex-shrink: 0;
+  font-family: var(--serif);
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--gold);
+  line-height: 1;
+  margin-right: 16px;
+  flex-shrink: 0;
 }
 .section-info { flex: 1; }
 .section-tag {
-font-size: 9px;
-font-weight: 600;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-color: var(–text3);
-margin-bottom: 3px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 3px;
 }
 .section-title {
-font-family: var(–serif);
-font-size: 20px;
-font-weight: 600;
-color: var(–navy);
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--navy);
 }
 
 /* ── QUESTION CARD ── */
 .q-card {
-background: var(–white);
-border: 1px solid var(–border);
-border-radius: var(–radius);
-padding: 24px 24px 20px;
-margin-bottom: 12px;
-transition: border-color 0.25s, box-shadow 0.25s;
-position: relative;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 24px 20px;
+  margin-bottom: 12px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  position: relative;
 }
 .q-card::after {
-content: ‘’;
-position: absolute;
-left: 0; top: 0; bottom: 0;
-width: 3px;
-background: var(–border2);
-border-radius: var(–radius) 0 0 var(–radius);
-transition: background 0.25s;
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--border2);
+  border-radius: var(--radius) 0 0 var(--radius);
+  transition: background 0.25s;
 }
-.q-card.answered::after { background: var(–gold); }
+.q-card.answered::after { background: var(--gold); }
 .q-card.answered { border-color: rgba(201,168,76,0.3); }
 .q-card.has-error::after { background: #d64444; }
 .q-card.has-error { border-color: rgba(214,68,68,0.3); background: #fff8f8; }
 
 .q-header {
-display: flex;
-gap: 14px;
-align-items: flex-start;
-margin-bottom: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
 .q-num {
-font-family: var(–serif);
-font-size: 15px;
-font-style: italic;
-color: var(–gold);
-white-space: nowrap;
-padding-top: 1px;
-min-width: 28px;
-flex-shrink: 0;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--gold);
+  white-space: nowrap;
+  padding-top: 1px;
+  min-width: 28px;
+  flex-shrink: 0;
 }
 .q-body { flex: 1; }
 .q-text {
-font-size: 15px;
-font-weight: 500;
-line-height: 1.6;
-color: var(–navy);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--navy);
 }
 .req { color: #d64444; margin-left: 2px; }
 .q-meta { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
 .tag {
-font-size: 9px;
-font-weight: 600;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-padding: 3px 8px;
-border-radius: 3px;
-border: 1px solid;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid;
 }
-.tag-type { border-color: var(–border2); color: var(–text3); background: var(–bg2); }
+.tag-type { border-color: var(--border2); color: var(--text3); background: var(--bg2); }
 .tag-hP { border-color: #b39ddb; color: #6a1b9a; background: #f3e5f5; }
-.tag-h1 { border-color: var(–gold); color: #7a5800; background: var(–gold3); }
+.tag-h1 { border-color: var(--gold); color: #7a5800; background: var(--gold3); }
 .tag-h2 { border-color: #80cbc4; color: #00574b; background: #e0f2f1; }
 .tag-h3 { border-color: #90caf9; color: #0d47a1; background: #e3f2fd; }
-.q-hint { font-size: 11px; color: var(–text3); font-style: italic; margin-top: 4px; }
+.q-hint { font-size: 11px; color: var(--text3); font-style: italic; margin-top: 4px; }
 
 /* ── OPTIONS ── */
 .options { display: flex; flex-direction: column; gap: 7px; }
 .opt-label {
-display: flex;
-align-items: center;
-gap: 12px;
-padding: 11px 14px;
-border: 1px solid var(–border);
-border-radius: var(–radius);
-background: var(–bg);
-cursor: pointer;
-transition: all 0.18s ease;
-font-size: 14px;
-color: var(–text2);
-font-weight: 400;
-user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-size: 14px;
+  color: var(--text2);
+  font-weight: 400;
+  user-select: none;
 }
 .opt-label input { display: none; }
-.opt-label:hover { background: var(–white); border-color: var(–border2); color: var(–navy); }
+.opt-label:hover { background: var(--white); border-color: var(--border2); color: var(--navy); }
 .opt-label.selected {
-background: var(–gold-dim);
-border-color: var(–gold);
-color: var(–navy);
-font-weight: 500;
+  background: var(--gold-dim);
+  border-color: var(--gold);
+  color: var(--navy);
+  font-weight: 500;
 }
 .opt-indicator {
-width: 17px; height: 17px;
-border: 1.5px solid var(–border2);
-border-radius: 50%;
-flex-shrink: 0;
-transition: all 0.18s;
-position: relative;
-background: var(–white);
+  width: 17px; height: 17px;
+  border: 1.5px solid var(--border2);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: all 0.18s;
+  position: relative;
+  background: var(--white);
 }
-.opt-label.selected .opt-indicator { border-color: var(–gold); background: var(–gold); }
+.opt-label.selected .opt-indicator { border-color: var(--gold); background: var(--gold); }
 .opt-label.selected .opt-indicator::after {
-content: ‘’;
-position: absolute;
-top: 50%; left: 50%;
-transform: translate(-50%,-50%);
-width: 5px; height: 5px;
-border-radius: 50%;
-background: var(–white);
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--white);
 }
 .opt-indicator.sq { border-radius: 4px; }
 .opt-label.selected .opt-indicator.sq::after {
-content: ‘✓’;
-font-size: 10px;
-color: var(–white);
-background: none;
-width: auto; height: auto;
-font-weight: 700;
-line-height: 1;
+  content: '✓';
+  font-size: 10px;
+  color: var(--white);
+  background: none;
+  width: auto; height: auto;
+  font-weight: 700;
+  line-height: 1;
 }
 
 /* ── LIKERT 4 pts ── */
 .likert-wrap { overflow-x: auto; padding-bottom: 2px; }
 .likert-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 6px;
-min-width: 420px;
-align-items: end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  min-width: 420px;
+  align-items: end;
 }
 .likert-item {
-display: flex;
-flex-direction: column;
-align-items: stretch;
-cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  cursor: pointer;
 }
 .likert-item label {
-display: flex;
-flex-direction: column;
-align-items: stretch;
-cursor: pointer;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  cursor: pointer;
+  width: 100%;
 }
 .likert-item input { display: none; }
 .likert-label-text {
-font-size: 10px;
-color: var(–text3);
-text-align: center;
-line-height: 1.35;
-font-weight: 500;
-transition: color 0.2s;
-padding: 0 2px 6px;
-min-height: 52px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-end;
-gap: 4px;
+  font-size: 10px;
+  color: var(--text3);
+  text-align: center;
+  line-height: 1.35;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0 2px 6px;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
 }
 .likert-pct {
-font-family: var(–serif);
-font-size: 14px;
-font-style: italic;
-font-weight: 700;
-color: var(–gold);
-opacity: 0.55;
-transition: opacity 0.2s, color 0.2s;
-display: block;
-line-height: 1;
+  font-family: var(--serif);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--gold);
+  opacity: 0.55;
+  transition: opacity 0.2s, color 0.2s;
+  display: block;
+  line-height: 1;
 }
 .likert-item:hover .likert-pct { opacity: 0.85; }
-.likert-item.selected .likert-pct { opacity: 1; color: var(–gold); }
-.likert-item.selected .likert-label-text { color: var(–gold); font-weight: 600; }
+.likert-item.selected .likert-pct { opacity: 1; color: var(--gold); }
+.likert-item.selected .likert-label-text { color: var(--gold); font-weight: 600; }
 
 /* Heights grow proportionally to signal intensity */
 .likert-box {
-width: 100%;
-border: 1.5px solid var(–border2);
-background: var(–bg2);
-border-radius: 3px;
-transition: all 0.2s ease;
-flex-shrink: 0;
+  width: 100%;
+  border: 1.5px solid var(--border2);
+  background: var(--bg2);
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
 }
-.likert-item[data-pct=“25”]  .likert-box { height: 18px; }
-.likert-item[data-pct=“50”]  .likert-box { height: 28px; }
-.likert-item[data-pct=“75”]  .likert-box { height: 40px; }
-.likert-item[data-pct=“100”] .likert-box { height: 54px; }
+.likert-item[data-pct="25"]  .likert-box { height: 18px; }
+.likert-item[data-pct="50"]  .likert-box { height: 28px; }
+.likert-item[data-pct="75"]  .likert-box { height: 40px; }
+.likert-item[data-pct="100"] .likert-box { height: 54px; }
 
-.likert-item:hover .likert-box { border-color: var(–gold); background: var(–gold3); }
-.likert-item.selected .likert-box { background: var(–gold); border-color: var(–gold); }
+.likert-item:hover .likert-box { border-color: var(--gold); background: var(--gold3); }
+.likert-item.selected .likert-box { background: var(--gold); border-color: var(--gold); }
 
 /* ── DICHOTOMIQUE ── */
 .dicho-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .dicho-btn {
-padding: 15px;
-border: 1.5px solid var(–border2);
-border-radius: var(–radius);
-background: var(–bg2);
-color: var(–text2);
-font-family: var(–serif);
-font-size: 20px;
-font-weight: 600;
-font-style: italic;
-cursor: pointer;
-transition: all 0.2s ease;
-text-align: center;
+  padding: 15px;
+  border: 1.5px solid var(--border2);
+  border-radius: var(--radius);
+  background: var(--bg2);
+  color: var(--text2);
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
 }
-.dicho-btn:hover { background: var(–white); border-color: var(–navy); color: var(–navy); }
-.dicho-btn.sel-oui { background: var(–navy); border-color: var(–navy); color: var(–gold); }
-.dicho-btn.sel-non { background: var(–gold-dim); border-color: var(–gold); color: var(–navy); }
+.dicho-btn:hover { background: var(--white); border-color: var(--navy); color: var(--navy); }
+.dicho-btn.sel-oui { background: var(--navy); border-color: var(--navy); color: var(--gold); }
+.dicho-btn.sel-non { background: var(--gold-dim); border-color: var(--gold); color: var(--navy); }
 
 /* ── ERRORS ── */
 .error-msg { font-size: 11px; color: #d64444; margin-top: 10px; display: none; font-style: italic; }
@@ -435,82 +434,82 @@ text-align: center;
 
 /* ── SUBMIT ── */
 .submit-wrap {
-margin-top: 60px;
-background: var(–navy);
-border-radius: var(–radius);
-padding: 48px 40px;
-text-align: center;
-position: relative;
-overflow: hidden;
+  margin-top: 60px;
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 .submit-wrap::before {
-content: ‘’;
-position: absolute;
-bottom: -60px; right: -60px;
-width: 200px; height: 200px;
-border-radius: 50%;
-border: 40px solid rgba(201,168,76,0.07);
-pointer-events: none;
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -60px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  border: 40px solid rgba(201,168,76,0.07);
+  pointer-events: none;
 }
 .submit-wrap p {
-font-size: 12px;
-color: rgba(255,255,255,0.4);
-line-height: 1.7;
-margin-bottom: 24px;
-letter-spacing: 0.03em;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  letter-spacing: 0.03em;
 }
 .submit-btn {
-display: inline-flex;
-align-items: center;
-gap: 12px;
-background: var(–gold);
-color: var(–navy);
-font-family: var(–sans);
-font-size: 14px;
-font-weight: 700;
-border: none;
-border-radius: var(–radius);
-padding: 15px 44px;
-cursor: pointer;
-transition: all 0.2s ease;
-letter-spacing: 0.04em;
-text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--gold);
+  color: var(--navy);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius);
+  padding: 15px 44px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
-.submit-btn:hover { background: var(–gold2); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(201,168,76,0.3); }
+.submit-btn:hover { background: var(--gold2); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(201,168,76,0.3); }
 .submit-btn:active { transform: translateY(0); }
 .submit-btn svg { width: 15px; height: 15px; }
 
 /* ── SUCCESS ── */
 #success-screen {
-display: none;
-position: fixed;
-inset: 0;
-background: var(–navy);
-z-index: 1000;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 40px;
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--navy);
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
 }
 #success-screen.active { display: flex; }
 .success-icon {
-width: 80px; height: 80px;
-border-radius: 50%;
-border: 2px solid var(–gold);
-background: rgba(201,168,76,0.1);
-display: flex; align-items: center; justify-content: center;
-margin-bottom: 28px;
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: rgba(201,168,76,0.1);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 28px;
 }
-.success-icon svg { width: 34px; height: 34px; color: var(–gold); }
+.success-icon svg { width: 34px; height: 34px; color: var(--gold); }
 #success-screen h2 {
-font-family: var(–serif);
-font-size: 38px;
-font-weight: 700;
-color: var(–white);
-margin-bottom: 12px;
+  font-family: var(--serif);
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
 }
-#success-screen h2 em { font-style: italic; color: var(–gold); }
+#success-screen h2 em { font-style: italic; color: var(--gold); }
 #success-screen p { font-size: 13px; color: rgba(255,255,255,0.45); max-width: 420px; line-height: 1.75; font-weight: 300; }
 
 /* ── ANIMATIONS ── */
@@ -522,15 +521,14 @@ margin-bottom: 12px;
 .section:nth-child(4){animation-delay:0.21s}
 
 @media(max-width:560px){
-.hero{padding:44px 20px 40px}
-.q-card{padding:18px 16px 16px}
-.likert-grid{min-width:360px}
-.wrapper{padding:0 16px 60px}
-.progress-meta{padding:10px 16px}
-.submit-wrap{padding:36px 20px}
+  .hero{padding:44px 20px 40px}
+  .q-card{padding:18px 16px 16px}
+  .likert-grid{min-width:360px}
+  .wrapper{padding:0 16px 60px}
+  .progress-meta{padding:10px 16px}
+  .submit-wrap{padding:36px 20px}
 }
 </style>
-
 </head>
 <body>
 
@@ -543,7 +541,6 @@ margin-bottom: 12px;
 </div>
 
 <!-- PROGRESS -->
-
 <div class="progress-wrap">
   <div class="progress-bar-outer"><div class="progress-bar-inner" id="progress-bar"></div></div>
   <div class="progress-meta">
@@ -553,7 +550,6 @@ margin-bottom: 12px;
 </div>
 
 <!-- HERO -->
-
 <div class="hero">
   <div class="hero-badge">Enquête académique quantitative</div>
   <h1>Certifications<br><em>Professionnelles</em><br>& Ingénierie</h1>
@@ -574,7 +570,6 @@ margin-bottom: 12px;
 <form id="survey-form" action="https://formspree.io/f/xjgjqwzp" method="POST">
 
   <!-- ── SECTION A ── -->
-
   <div class="section">
     <div class="section-head">
       <div class="section-letter">A</div>
@@ -584,66 +579,62 @@ margin-bottom: 12px;
       </div>
     </div>
 
-```
-<!-- Q1 — option "Autre" supprimée -->
-<div class="q-card" id="card-1">
-  <div class="q-header">
-    <div class="q-num">01.</div>
-    <div class="q-body">
-      <div class="q-text">Quel est votre genre ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-hP">Profil</span></div>
+    <!-- Q1 — option "Autre" supprimée -->
+    <div class="q-card" id="card-1">
+      <div class="q-header">
+        <div class="q-num">01.</div>
+        <div class="q-body">
+          <div class="q-text">Quel est votre genre ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-hP">Profil</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q1" data-type="radio">
+        <label class="opt-label"><input type="radio" name="q1" value="Homme"><div class="opt-indicator"></div>Homme</label>
+        <label class="opt-label"><input type="radio" name="q1" value="Femme"><div class="opt-indicator"></div>Femme</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q1" data-type="radio">
-    <label class="opt-label"><input type="radio" name="q1" value="Homme"><div class="opt-indicator"></div>Homme</label>
-    <label class="opt-label"><input type="radio" name="q1" value="Femme"><div class="opt-indicator"></div>Femme</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q2 -->
-<div class="q-card" id="card-2">
-  <div class="q-header">
-    <div class="q-num">02.</div>
-    <div class="q-body">
-      <div class="q-text">Quel est votre âge ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-hP">Profil</span></div>
+    <!-- Q2 -->
+    <div class="q-card" id="card-2">
+      <div class="q-header">
+        <div class="q-num">02.</div>
+        <div class="q-body">
+          <div class="q-text">Quel est votre âge ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-hP">Profil</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q2" data-type="radio">
+        <label class="opt-label"><input type="radio" name="q2" value="Moins de 20 ans"><div class="opt-indicator"></div>Moins de 20 ans</label>
+        <label class="opt-label"><input type="radio" name="q2" value="20 – 22 ans"><div class="opt-indicator"></div>20 – 22 ans</label>
+        <label class="opt-label"><input type="radio" name="q2" value="23 – 25 ans"><div class="opt-indicator"></div>23 – 25 ans</label>
+        <label class="opt-label"><input type="radio" name="q2" value="Plus de 25 ans"><div class="opt-indicator"></div>Plus de 25 ans</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q2" data-type="radio">
-    <label class="opt-label"><input type="radio" name="q2" value="Moins de 20 ans"><div class="opt-indicator"></div>Moins de 20 ans</label>
-    <label class="opt-label"><input type="radio" name="q2" value="20 – 22 ans"><div class="opt-indicator"></div>20 – 22 ans</label>
-    <label class="opt-label"><input type="radio" name="q2" value="23 – 25 ans"><div class="opt-indicator"></div>23 – 25 ans</label>
-    <label class="opt-label"><input type="radio" name="q2" value="Plus de 25 ans"><div class="opt-indicator"></div>Plus de 25 ans</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q3 -->
-<div class="q-card" id="card-3">
-  <div class="q-header">
-    <div class="q-num">03.</div>
-    <div class="q-body">
-      <div class="q-text">De quelle ville venez-vous ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-hP">Profil</span></div>
+    <!-- Q3 -->
+    <div class="q-card" id="card-3">
+      <div class="q-header">
+        <div class="q-num">03.</div>
+        <div class="q-body">
+          <div class="q-text">De quelle ville venez-vous ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-hP">Profil</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q3" data-type="radio">
+        <label class="opt-label"><input type="radio" name="q3" value="Casablanca"><div class="opt-indicator"></div>Casablanca</label>
+        <label class="opt-label"><input type="radio" name="q3" value="Rabat"><div class="opt-indicator"></div>Rabat</label>
+        <label class="opt-label"><input type="radio" name="q3" value="Marrakech"><div class="opt-indicator"></div>Marrakech</label>
+        <label class="opt-label"><input type="radio" name="q3" value="Fès"><div class="opt-indicator"></div>Fès</label>
+        <label class="opt-label"><input type="radio" name="q3" value="Tanger / Tétouan"><div class="opt-indicator"></div>Tanger / Tétouan</label>
+        <label class="opt-label"><input type="radio" name="q3" value="Autre ville"><div class="opt-indicator"></div>Autre ville</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q3" data-type="radio">
-    <label class="opt-label"><input type="radio" name="q3" value="Casablanca"><div class="opt-indicator"></div>Casablanca</label>
-    <label class="opt-label"><input type="radio" name="q3" value="Rabat"><div class="opt-indicator"></div>Rabat</label>
-    <label class="opt-label"><input type="radio" name="q3" value="Marrakech"><div class="opt-indicator"></div>Marrakech</label>
-    <label class="opt-label"><input type="radio" name="q3" value="Fès"><div class="opt-indicator"></div>Fès</label>
-    <label class="opt-label"><input type="radio" name="q3" value="Tanger / Tétouan"><div class="opt-indicator"></div>Tanger / Tétouan</label>
-    <label class="opt-label"><input type="radio" name="q3" value="Autre ville"><div class="opt-indicator"></div>Autre ville</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
-```
-
   </div>
 
   <!-- ── SECTION B ── -->
-
   <div class="section">
     <div class="section-head">
       <div class="section-letter">B</div>
@@ -653,110 +644,106 @@ margin-bottom: 12px;
       </div>
     </div>
 
-```
-<!-- Q4 Likert 4pts -->
-<div class="q-card" id="card-4">
-  <div class="q-header">
-    <div class="q-num">04.</div>
-    <div class="q-body">
-      <div class="q-text">Est-ce qu'avoir une certification aide à trouver un emploi plus facilement ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h1">H1</span></div>
+    <!-- Q4 Likert 4pts -->
+    <div class="q-card" id="card-4">
+      <div class="q-header">
+        <div class="q-num">04.</div>
+        <div class="q-body">
+          <div class="q-text">Est-ce qu'avoir une certification aide à trouver un emploi plus facilement ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h1">H1</span></div>
+        </div>
+      </div>
+      <div class="likert-wrap">
+        <div class="likert-grid" data-q="q4" data-type="likert">
+          <div class="likert-item" data-pct="25"><label><input type="radio" name="q4" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="50"><label><input type="radio" name="q4" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="75"><label><input type="radio" name="q4" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="100"><label><input type="radio" name="q4" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
+        </div>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="likert-wrap">
-    <div class="likert-grid" data-q="q4" data-type="likert">
-      <div class="likert-item" data-pct="25"><label><input type="radio" name="q4" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="50"><label><input type="radio" name="q4" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="75"><label><input type="radio" name="q4" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="100"><label><input type="radio" name="q4" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
-    </div>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q5 Likert 4pts -->
-<div class="q-card" id="card-5">
-  <div class="q-header">
-    <div class="q-num">05.</div>
-    <div class="q-body">
-      <div class="q-text">Les entreprises préfèrent recruter des ingénieurs qui ont des certifications reconnues.<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h1">H1</span></div>
+    <!-- Q5 Likert 4pts -->
+    <div class="q-card" id="card-5">
+      <div class="q-header">
+        <div class="q-num">05.</div>
+        <div class="q-body">
+          <div class="q-text">Les entreprises préfèrent recruter des ingénieurs qui ont des certifications reconnues.<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h1">H1</span></div>
+        </div>
+      </div>
+      <div class="likert-wrap">
+        <div class="likert-grid" data-q="q5" data-type="likert">
+          <div class="likert-item" data-pct="25"><label><input type="radio" name="q5" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="50"><label><input type="radio" name="q5" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="75"><label><input type="radio" name="q5" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="100"><label><input type="radio" name="q5" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
+        </div>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="likert-wrap">
-    <div class="likert-grid" data-q="q5" data-type="likert">
-      <div class="likert-item" data-pct="25"><label><input type="radio" name="q5" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="50"><label><input type="radio" name="q5" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="75"><label><input type="radio" name="q5" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="100"><label><input type="radio" name="q5" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
-    </div>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q6 Dichotomique -->
-<div class="q-card" id="card-6">
-  <div class="q-header">
-    <div class="q-num">06.</div>
-    <div class="q-body">
-      <div class="q-text">Avez-vous déjà obtenu une certification professionnelle ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Dichotomique</span><span class="tag tag-h1">H1</span></div>
+    <!-- Q6 Dichotomique -->
+    <div class="q-card" id="card-6">
+      <div class="q-header">
+        <div class="q-num">06.</div>
+        <div class="q-body">
+          <div class="q-text">Avez-vous déjà obtenu une certification professionnelle ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Dichotomique</span><span class="tag tag-h1">H1</span></div>
+        </div>
+      </div>
+      <div class="dicho-wrap" data-q="q6" data-type="dicho">
+        <button type="button" class="dicho-btn" data-val="Oui">Oui</button>
+        <button type="button" class="dicho-btn" data-val="Non">Non</button>
+      </div>
+      <input type="hidden" name="q6" id="q6-val">
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="dicho-wrap" data-q="q6" data-type="dicho">
-    <button type="button" class="dicho-btn" data-val="Oui">Oui</button>
-    <button type="button" class="dicho-btn" data-val="Non">Non</button>
-  </div>
-  <input type="hidden" name="q6" id="q6-val">
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q7 Likert 4pts -->
-<div class="q-card" id="card-7">
-  <div class="q-header">
-    <div class="q-num">07.</div>
-    <div class="q-body">
-      <div class="q-text">Une certification me démarque des autres diplômés sur le marché du travail.<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h1">H1</span></div>
+    <!-- Q7 Likert 4pts -->
+    <div class="q-card" id="card-7">
+      <div class="q-header">
+        <div class="q-num">07.</div>
+        <div class="q-body">
+          <div class="q-text">Une certification me démarque des autres diplômés sur le marché du travail.<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h1">H1</span></div>
+        </div>
+      </div>
+      <div class="likert-wrap">
+        <div class="likert-grid" data-q="q7" data-type="likert">
+          <div class="likert-item" data-pct="25"><label><input type="radio" name="q7" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="50"><label><input type="radio" name="q7" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="75"><label><input type="radio" name="q7" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="100"><label><input type="radio" name="q7" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
+        </div>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="likert-wrap">
-    <div class="likert-grid" data-q="q7" data-type="likert">
-      <div class="likert-item" data-pct="25"><label><input type="radio" name="q7" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="50"><label><input type="radio" name="q7" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="75"><label><input type="radio" name="q7" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="100"><label><input type="radio" name="q7" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
-    </div>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q8 Choix multiple -->
-<div class="q-card" id="card-8">
-  <div class="q-header">
-    <div class="q-num">08.</div>
-    <div class="q-body">
-      <div class="q-text">Dans quel(s) domaine(s) pensez-vous qu'une certification est la plus utile pour un ingénieur informatique ?<span class="req">*</span></div>
-      <div class="q-hint">Plusieurs réponses possibles</div>
-      <div class="q-meta"><span class="tag tag-type">Choix multiple</span><span class="tag tag-h1">H1</span></div>
+    <!-- Q8 Choix multiple -->
+    <div class="q-card" id="card-8">
+      <div class="q-header">
+        <div class="q-num">08.</div>
+        <div class="q-body">
+          <div class="q-text">Dans quel(s) domaine(s) pensez-vous qu'une certification est la plus utile pour un ingénieur informatique ?<span class="req">*</span></div>
+          <div class="q-hint">Plusieurs réponses possibles</div>
+          <div class="q-meta"><span class="tag tag-type">Choix multiple</span><span class="tag tag-h1">H1</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q8" data-type="checkbox">
+        <label class="opt-label"><input type="checkbox" name="q8" value="Cloud (AWS, Azure, GCP)"><div class="opt-indicator sq"></div>Cloud (AWS, Azure, GCP)</label>
+        <label class="opt-label"><input type="checkbox" name="q8" value="Cybersécurité"><div class="opt-indicator sq"></div>Cybersécurité</label>
+        <label class="opt-label"><input type="checkbox" name="q8" value="IA & Data Science"><div class="opt-indicator sq"></div>IA &amp; Data Science</label>
+        <label class="opt-label"><input type="checkbox" name="q8" value="Gestion de projet"><div class="opt-indicator sq"></div>Gestion de projet</label>
+        <label class="opt-label"><input type="checkbox" name="q8" value="Réseaux"><div class="opt-indicator sq"></div>Réseaux</label>
+        <label class="opt-label"><input type="checkbox" name="q8" value="Autre domaine"><div class="opt-indicator sq"></div>Autre domaine</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner au moins une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q8" data-type="checkbox">
-    <label class="opt-label"><input type="checkbox" name="q8" value="Cloud (AWS, Azure, GCP)"><div class="opt-indicator sq"></div>Cloud (AWS, Azure, GCP)</label>
-    <label class="opt-label"><input type="checkbox" name="q8" value="Cybersécurité"><div class="opt-indicator sq"></div>Cybersécurité</label>
-    <label class="opt-label"><input type="checkbox" name="q8" value="IA & Data Science"><div class="opt-indicator sq"></div>IA &amp; Data Science</label>
-    <label class="opt-label"><input type="checkbox" name="q8" value="Gestion de projet"><div class="opt-indicator sq"></div>Gestion de projet</label>
-    <label class="opt-label"><input type="checkbox" name="q8" value="Réseaux"><div class="opt-indicator sq"></div>Réseaux</label>
-    <label class="opt-label"><input type="checkbox" name="q8" value="Autre domaine"><div class="opt-indicator sq"></div>Autre domaine</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner au moins une réponse.</div>
-</div>
-```
-
   </div>
 
   <!-- ── SECTION C ── -->
-
   <div class="section">
     <div class="section-head">
       <div class="section-letter">C</div>
@@ -766,108 +753,104 @@ margin-bottom: 12px;
       </div>
     </div>
 
-```
-<!-- Q9 Likert 4pts -->
-<div class="q-card" id="card-9">
-  <div class="q-header">
-    <div class="q-num">09.</div>
-    <div class="q-body">
-      <div class="q-text">Notre programme de Génie Informatique prépare bien aux certifications professionnelles.<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h2">H2</span></div>
+    <!-- Q9 Likert 4pts -->
+    <div class="q-card" id="card-9">
+      <div class="q-header">
+        <div class="q-num">09.</div>
+        <div class="q-body">
+          <div class="q-text">Notre programme de Génie Informatique prépare bien aux certifications professionnelles.<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h2">H2</span></div>
+        </div>
+      </div>
+      <div class="likert-wrap">
+        <div class="likert-grid" data-q="q9" data-type="likert">
+          <div class="likert-item" data-pct="25"><label><input type="radio" name="q9" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="50"><label><input type="radio" name="q9" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="75"><label><input type="radio" name="q9" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="100"><label><input type="radio" name="q9" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
+        </div>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="likert-wrap">
-    <div class="likert-grid" data-q="q9" data-type="likert">
-      <div class="likert-item" data-pct="25"><label><input type="radio" name="q9" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="50"><label><input type="radio" name="q9" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="75"><label><input type="radio" name="q9" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="100"><label><input type="radio" name="q9" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
-    </div>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q10 Likert 4pts -->
-<div class="q-card" id="card-10">
-  <div class="q-header">
-    <div class="q-num">10.</div>
-    <div class="q-body">
-      <div class="q-text">Préparer une certification en dehors des cours demande trop d'effort en plus.<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h2">H2</span></div>
+    <!-- Q10 Likert 4pts -->
+    <div class="q-card" id="card-10">
+      <div class="q-header">
+        <div class="q-num">10.</div>
+        <div class="q-body">
+          <div class="q-text">Préparer une certification en dehors des cours demande trop d'effort en plus.<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h2">H2</span></div>
+        </div>
+      </div>
+      <div class="likert-wrap">
+        <div class="likert-grid" data-q="q10" data-type="likert">
+          <div class="likert-item" data-pct="25"><label><input type="radio" name="q10" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="50"><label><input type="radio" name="q10" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="75"><label><input type="radio" name="q10" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="100"><label><input type="radio" name="q10" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
+        </div>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="likert-wrap">
-    <div class="likert-grid" data-q="q10" data-type="likert">
-      <div class="likert-item" data-pct="25"><label><input type="radio" name="q10" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="50"><label><input type="radio" name="q10" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="75"><label><input type="radio" name="q10" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="100"><label><input type="radio" name="q10" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
-    </div>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q11 Dichotomique -->
-<div class="q-card" id="card-11">
-  <div class="q-header">
-    <div class="q-num">11.</div>
-    <div class="q-body">
-      <div class="q-text">Avez-vous déjà cherché des informations sur les certifications disponibles dans votre domaine ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Dichotomique</span><span class="tag tag-h2">H2</span></div>
+    <!-- Q11 Dichotomique -->
+    <div class="q-card" id="card-11">
+      <div class="q-header">
+        <div class="q-num">11.</div>
+        <div class="q-body">
+          <div class="q-text">Avez-vous déjà cherché des informations sur les certifications disponibles dans votre domaine ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Dichotomique</span><span class="tag tag-h2">H2</span></div>
+        </div>
+      </div>
+      <div class="dicho-wrap" data-q="q11" data-type="dicho">
+        <button type="button" class="dicho-btn" data-val="Oui">Oui</button>
+        <button type="button" class="dicho-btn" data-val="Non">Non</button>
+      </div>
+      <input type="hidden" name="q11" id="q11-val">
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="dicho-wrap" data-q="q11" data-type="dicho">
-    <button type="button" class="dicho-btn" data-val="Oui">Oui</button>
-    <button type="button" class="dicho-btn" data-val="Non">Non</button>
-  </div>
-  <input type="hidden" name="q11" id="q11-val">
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q12 Choix unique -->
-<div class="q-card" id="card-12">
-  <div class="q-header">
-    <div class="q-num">12.</div>
-    <div class="q-body">
-      <div class="q-text">Comment souhaiteriez-vous que les certifications soient intégrées dans votre cursus ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-h2">H2</span></div>
+    <!-- Q12 Choix unique -->
+    <div class="q-card" id="card-12">
+      <div class="q-header">
+        <div class="q-num">12.</div>
+        <div class="q-body">
+          <div class="q-text">Comment souhaiteriez-vous que les certifications soient intégrées dans votre cursus ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-h2">H2</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q12" data-type="radio">
+        <label class="opt-label"><input type="radio" name="q12" value="Cours obligatoires dédiés"><div class="opt-indicator"></div>Cours obligatoires dédiés</label>
+        <label class="opt-label"><input type="radio" name="q12" value="Cours optionnels"><div class="opt-indicator"></div>Cours optionnels</label>
+        <label class="opt-label"><input type="radio" name="q12" value="Partenariats avec réductions et accès facilité"><div class="opt-indicator"></div>Partenariats avec réductions et accès facilité</label>
+        <label class="opt-label"><input type="radio" name="q12" value="Mention dans le diplôme"><div class="opt-indicator"></div>Mention dans le diplôme</label>
+        <label class="opt-label"><input type="radio" name="q12" value="Je ne souhaite pas d'intégration"><div class="opt-indicator"></div>Je ne souhaite pas d'intégration</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q12" data-type="radio">
-    <label class="opt-label"><input type="radio" name="q12" value="Cours obligatoires dédiés"><div class="opt-indicator"></div>Cours obligatoires dédiés</label>
-    <label class="opt-label"><input type="radio" name="q12" value="Cours optionnels"><div class="opt-indicator"></div>Cours optionnels</label>
-    <label class="opt-label"><input type="radio" name="q12" value="Partenariats avec réductions et accès facilité"><div class="opt-indicator"></div>Partenariats avec réductions et accès facilité</label>
-    <label class="opt-label"><input type="radio" name="q12" value="Mention dans le diplôme"><div class="opt-indicator"></div>Mention dans le diplôme</label>
-    <label class="opt-label"><input type="radio" name="q12" value="Je ne souhaite pas d'intégration"><div class="opt-indicator"></div>Je ne souhaite pas d'intégration</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q13 Likert 4pts -->
-<div class="q-card" id="card-13">
-  <div class="q-header">
-    <div class="q-num">13.</div>
-    <div class="q-body">
-      <div class="q-text">Les professeurs nous encouragent à passer des certifications professionnelles.<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h2">H2</span></div>
+    <!-- Q13 Likert 4pts -->
+    <div class="q-card" id="card-13">
+      <div class="q-header">
+        <div class="q-num">13.</div>
+        <div class="q-body">
+          <div class="q-text">Les professeurs nous encouragent à passer des certifications professionnelles.<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h2">H2</span></div>
+        </div>
+      </div>
+      <div class="likert-wrap">
+        <div class="likert-grid" data-q="q13" data-type="likert">
+          <div class="likert-item" data-pct="25"><label><input type="radio" name="q13" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="50"><label><input type="radio" name="q13" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="75"><label><input type="radio" name="q13" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="100"><label><input type="radio" name="q13" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
+        </div>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="likert-wrap">
-    <div class="likert-grid" data-q="q13" data-type="likert">
-      <div class="likert-item" data-pct="25"><label><input type="radio" name="q13" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="50"><label><input type="radio" name="q13" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="75"><label><input type="radio" name="q13" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="100"><label><input type="radio" name="q13" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
-    </div>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
-```
-
   </div>
 
   <!-- ── SECTION D ── -->
-
   <div class="section">
     <div class="section-head">
       <div class="section-letter">D</div>
@@ -877,110 +860,106 @@ margin-bottom: 12px;
       </div>
     </div>
 
-```
-<!-- Q14 Likert 4pts -->
-<div class="q-card" id="card-14">
-  <div class="q-header">
-    <div class="q-num">14.</div>
-    <div class="q-body">
-      <div class="q-text">Je veux obtenir une certification avant la fin de mes études d'ingénieur.<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h3">H3</span></div>
+    <!-- Q14 Likert 4pts -->
+    <div class="q-card" id="card-14">
+      <div class="q-header">
+        <div class="q-num">14.</div>
+        <div class="q-body">
+          <div class="q-text">Je veux obtenir une certification avant la fin de mes études d'ingénieur.<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Likert 4 pts</span><span class="tag tag-h3">H3</span></div>
+        </div>
+      </div>
+      <div class="likert-wrap">
+        <div class="likert-grid" data-q="q14" data-type="likert">
+          <div class="likert-item" data-pct="25"><label><input type="radio" name="q14" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="50"><label><input type="radio" name="q14" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="75"><label><input type="radio" name="q14" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
+          <div class="likert-item" data-pct="100"><label><input type="radio" name="q14" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
+        </div>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="likert-wrap">
-    <div class="likert-grid" data-q="q14" data-type="likert">
-      <div class="likert-item" data-pct="25"><label><input type="radio" name="q14" value="Pas du tout d'accord"><div class="likert-label-text"><span class="likert-pct">25%</span>Pas du tout d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="50"><label><input type="radio" name="q14" value="Plutôt en désaccord"><div class="likert-label-text"><span class="likert-pct">50%</span>Plutôt en désaccord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="75"><label><input type="radio" name="q14" value="Plutôt d'accord"><div class="likert-label-text"><span class="likert-pct">75%</span>Plutôt d'accord</div><div class="likert-box"></div></label></div>
-      <div class="likert-item" data-pct="100"><label><input type="radio" name="q14" value="Tout à fait d'accord"><div class="likert-label-text"><span class="likert-pct">100%</span>Tout à fait d'accord</div><div class="likert-box"></div></label></div>
-    </div>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q15 Dichotomique -->
-<div class="q-card" id="card-15">
-  <div class="q-header">
-    <div class="q-num">15.</div>
-    <div class="q-body">
-      <div class="q-text">Avez-vous déjà commencé à préparer une certification (cours en ligne, livres, etc.) ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Dichotomique</span><span class="tag tag-h3">H3</span></div>
+    <!-- Q15 Dichotomique -->
+    <div class="q-card" id="card-15">
+      <div class="q-header">
+        <div class="q-num">15.</div>
+        <div class="q-body">
+          <div class="q-text">Avez-vous déjà commencé à préparer une certification (cours en ligne, livres, etc.) ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Dichotomique</span><span class="tag tag-h3">H3</span></div>
+        </div>
+      </div>
+      <div class="dicho-wrap" data-q="q15" data-type="dicho">
+        <button type="button" class="dicho-btn" data-val="Oui">Oui</button>
+        <button type="button" class="dicho-btn" data-val="Non">Non</button>
+      </div>
+      <input type="hidden" name="q15" id="q15-val">
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="dicho-wrap" data-q="q15" data-type="dicho">
-    <button type="button" class="dicho-btn" data-val="Oui">Oui</button>
-    <button type="button" class="dicho-btn" data-val="Non">Non</button>
-  </div>
-  <input type="hidden" name="q15" id="q15-val">
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
 
-<!-- Q16 Choix multiple -->
-<div class="q-card" id="card-16">
-  <div class="q-header">
-    <div class="q-num">16.</div>
-    <div class="q-body">
-      <div class="q-text">Pourquoi voulez-vous obtenir une certification ?<span class="req">*</span></div>
-      <div class="q-hint">Plusieurs réponses possibles</div>
-      <div class="q-meta"><span class="tag tag-type">Choix multiple</span><span class="tag tag-h3">H3</span></div>
+    <!-- Q16 Choix multiple -->
+    <div class="q-card" id="card-16">
+      <div class="q-header">
+        <div class="q-num">16.</div>
+        <div class="q-body">
+          <div class="q-text">Pourquoi voulez-vous obtenir une certification ?<span class="req">*</span></div>
+          <div class="q-hint">Plusieurs réponses possibles</div>
+          <div class="q-meta"><span class="tag tag-type">Choix multiple</span><span class="tag tag-h3">H3</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q16" data-type="checkbox">
+        <label class="opt-label"><input type="checkbox" name="q16" value="Trouver un emploi plus facilement"><div class="opt-indicator sq"></div>Trouver un emploi plus facilement</label>
+        <label class="opt-label"><input type="checkbox" name="q16" value="Me distinguer des autres diplômés"><div class="opt-indicator sq"></div>Me distinguer des autres diplômés</label>
+        <label class="opt-label"><input type="checkbox" name="q16" value="Apprendre plus dans mon domaine"><div class="opt-indicator sq"></div>Apprendre plus dans mon domaine</label>
+        <label class="opt-label"><input type="checkbox" name="q16" value="Opportunité de travailler à l'étranger"><div class="opt-indicator sq"></div>Opportunité de travailler à l'étranger</label>
+        <label class="opt-label"><input type="checkbox" name="q16" value="Influence de mon entourage"><div class="opt-indicator sq"></div>Influence de mon entourage</label>
+        <label class="opt-label"><input type="checkbox" name="q16" value="Recommandation de l'école"><div class="opt-indicator sq"></div>Recommandation de l'école</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner au moins une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q16" data-type="checkbox">
-    <label class="opt-label"><input type="checkbox" name="q16" value="Trouver un emploi plus facilement"><div class="opt-indicator sq"></div>Trouver un emploi plus facilement</label>
-    <label class="opt-label"><input type="checkbox" name="q16" value="Me distinguer des autres diplômés"><div class="opt-indicator sq"></div>Me distinguer des autres diplômés</label>
-    <label class="opt-label"><input type="checkbox" name="q16" value="Apprendre plus dans mon domaine"><div class="opt-indicator sq"></div>Apprendre plus dans mon domaine</label>
-    <label class="opt-label"><input type="checkbox" name="q16" value="Opportunité de travailler à l'étranger"><div class="opt-indicator sq"></div>Opportunité de travailler à l'étranger</label>
-    <label class="opt-label"><input type="checkbox" name="q16" value="Influence de mon entourage"><div class="opt-indicator sq"></div>Influence de mon entourage</label>
-    <label class="opt-label"><input type="checkbox" name="q16" value="Recommandation de l'école"><div class="opt-indicator sq"></div>Recommandation de l'école</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner au moins une réponse.</div>
-</div>
 
-<!-- Q17 Choix multiple -->
-<div class="q-card" id="card-17">
-  <div class="q-header">
-    <div class="q-num">17.</div>
-    <div class="q-body">
-      <div class="q-text">Qu'est-ce qui vous empêche de passer une certification ?<span class="req">*</span></div>
-      <div class="q-hint">Plusieurs réponses possibles</div>
-      <div class="q-meta"><span class="tag tag-type">Choix multiple</span><span class="tag tag-h3">H3</span></div>
+    <!-- Q17 Choix multiple -->
+    <div class="q-card" id="card-17">
+      <div class="q-header">
+        <div class="q-num">17.</div>
+        <div class="q-body">
+          <div class="q-text">Qu'est-ce qui vous empêche de passer une certification ?<span class="req">*</span></div>
+          <div class="q-hint">Plusieurs réponses possibles</div>
+          <div class="q-meta"><span class="tag tag-type">Choix multiple</span><span class="tag tag-h3">H3</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q17" data-type="checkbox">
+        <label class="opt-label"><input type="checkbox" name="q17" value="C'est trop cher"><div class="opt-indicator sq"></div>C'est trop cher</label>
+        <label class="opt-label"><input type="checkbox" name="q17" value="Pas assez de temps"><div class="opt-indicator sq"></div>Pas assez de temps</label>
+        <label class="opt-label"><input type="checkbox" name="q17" value="Je ne sais pas lesquelles existent"><div class="opt-indicator sq"></div>Je ne sais pas lesquelles existent</label>
+        <label class="opt-label"><input type="checkbox" name="q17" value="Pas de centre d'examen près de chez moi"><div class="opt-indicator sq"></div>Pas de centre d'examen près de chez moi</label>
+        <label class="opt-label"><input type="checkbox" name="q17" value="La langue (les examens sont souvent en anglais)"><div class="opt-indicator sq"></div>La langue (les examens sont souvent en anglais)</label>
+        <label class="opt-label"><input type="checkbox" name="q17" value="Rien ne m'empêche"><div class="opt-indicator sq"></div>Rien ne m'empêche</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner au moins une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q17" data-type="checkbox">
-    <label class="opt-label"><input type="checkbox" name="q17" value="C'est trop cher"><div class="opt-indicator sq"></div>C'est trop cher</label>
-    <label class="opt-label"><input type="checkbox" name="q17" value="Pas assez de temps"><div class="opt-indicator sq"></div>Pas assez de temps</label>
-    <label class="opt-label"><input type="checkbox" name="q17" value="Je ne sais pas lesquelles existent"><div class="opt-indicator sq"></div>Je ne sais pas lesquelles existent</label>
-    <label class="opt-label"><input type="checkbox" name="q17" value="Pas de centre d'examen près de chez moi"><div class="opt-indicator sq"></div>Pas de centre d'examen près de chez moi</label>
-    <label class="opt-label"><input type="checkbox" name="q17" value="La langue (les examens sont souvent en anglais)"><div class="opt-indicator sq"></div>La langue (les examens sont souvent en anglais)</label>
-    <label class="opt-label"><input type="checkbox" name="q17" value="Rien ne m'empêche"><div class="opt-indicator sq"></div>Rien ne m'empêche</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner au moins une réponse.</div>
-</div>
 
-<!-- Q18 Choix unique -->
-<div class="q-card" id="card-18">
-  <div class="q-header">
-    <div class="q-num">18.</div>
-    <div class="q-body">
-      <div class="q-text">Par quel moyen avez-vous entendu parler des certifications professionnelles pour la première fois ?<span class="req">*</span></div>
-      <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-h3">H3</span></div>
+    <!-- Q18 Choix unique -->
+    <div class="q-card" id="card-18">
+      <div class="q-header">
+        <div class="q-num">18.</div>
+        <div class="q-body">
+          <div class="q-text">Par quel moyen avez-vous entendu parler des certifications professionnelles pour la première fois ?<span class="req">*</span></div>
+          <div class="q-meta"><span class="tag tag-type">Choix unique</span><span class="tag tag-h3">H3</span></div>
+        </div>
+      </div>
+      <div class="options" data-q="q18" data-type="radio">
+        <label class="opt-label"><input type="radio" name="q18" value="Réseaux sociaux (LinkedIn, YouTube…)"><div class="opt-indicator"></div>Réseaux sociaux (LinkedIn, YouTube…)</label>
+        <label class="opt-label"><input type="radio" name="q18" value="Un camarade"><div class="opt-indicator"></div>Un camarade</label>
+        <label class="opt-label"><input type="radio" name="q18" value="Un professeur"><div class="opt-indicator"></div>Un professeur</label>
+        <label class="opt-label"><input type="radio" name="q18" value="Une entreprise lors d'un stage"><div class="opt-indicator"></div>Une entreprise lors d'un stage</label>
+        <label class="opt-label"><input type="radio" name="q18" value="Je n'en avais pas encore entendu parler"><div class="opt-indicator"></div>Je n'en avais pas encore entendu parler</label>
+      </div>
+      <div class="error-msg">Veuillez sélectionner une réponse.</div>
     </div>
-  </div>
-  <div class="options" data-q="q18" data-type="radio">
-    <label class="opt-label"><input type="radio" name="q18" value="Réseaux sociaux (LinkedIn, YouTube…)"><div class="opt-indicator"></div>Réseaux sociaux (LinkedIn, YouTube…)</label>
-    <label class="opt-label"><input type="radio" name="q18" value="Un camarade"><div class="opt-indicator"></div>Un camarade</label>
-    <label class="opt-label"><input type="radio" name="q18" value="Un professeur"><div class="opt-indicator"></div>Un professeur</label>
-    <label class="opt-label"><input type="radio" name="q18" value="Une entreprise lors d'un stage"><div class="opt-indicator"></div>Une entreprise lors d'un stage</label>
-    <label class="opt-label"><input type="radio" name="q18" value="Je n'en avais pas encore entendu parler"><div class="opt-indicator"></div>Je n'en avais pas encore entendu parler</label>
-  </div>
-  <div class="error-msg">Veuillez sélectionner une réponse.</div>
-</div>
-```
-
   </div>
 
   <!-- SUBMIT -->
-
   <div class="submit-wrap">
     <p>Toutes vos réponses sont anonymes et utilisées uniquement à des fins de recherche académique.<br>Vérifiez vos réponses avant de soumettre.</p>
     <button type="submit" class="submit-btn">
@@ -1084,6 +1063,5 @@ document.getElementById('survey-form').addEventListener('submit', async function
   } catch { alert('Erreur réseau.'); btn.textContent = 'Soumettre mes réponses'; btn.disabled = false; }
 });
 </script>
-
 </body>
 </html>
